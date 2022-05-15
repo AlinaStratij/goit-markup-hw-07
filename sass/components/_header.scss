@@ -1,13 +1,5 @@
 /* section "header" */
 
-.header__logo {
-  margin-right: 93px;
-
-  font-family: Raleway, sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  text-decoration: none;
-}
 .header {
   border-bottom: 1px solid #ececec;
 }
@@ -19,29 +11,27 @@
 
 .menu-list {
   display: flex;
-}
-
-.menu-list__item {
-  margin-right: 50px;
-}
-
-.menu-list__link {
-  display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
-
-  transition: color 250ms var(--timing-function);
-
-  color: var(--title-color);
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  &:hover {
-    color: var(--hover-color);
+  &__item {
+    margin-right: 50px;
   }
-  &:focus {
-    color: var(--hover-color);
+  &__link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    transition: color 250ms var(--timing-function);
+
+    color: var(--title-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    &:hover {
+      color: var(--hover-color);
+    }
+    &:focus {
+      color: var(--hover-color);
+    }
   }
 }
 
@@ -72,39 +62,41 @@
   font-weight: 500;
   font-size: 14px;
 }
-.contacts-list__item {
-  display: flex;
-  margin-right: 50px;
+.contacts-list {
+  &__item {
+    display: flex;
+    margin-right: 50px;
+  }
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    transition: color 250ms var(--timing-function),
+      fill 250ms var(--timing-function);
+
+    color: var(--text-color);
+
+    &:hover {
+      color: var(--hover-color);
+    }
+
+    &:focus {
+      color: var(--hover-color);
+    }
+    &:focus .contacts-list__icon {
+      fill: var(--hover-color);
+    }
+  }
+
+  &__icon {
+    margin-right: 10px;
+    fill: currentColor;
+  }
 }
+
 .header-contacts .contacts-list__item:last-child {
   margin-right: 0;
-}
-
-.contacts-list__link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-top: 32px;
-  padding-bottom: 32px;
-
-  transition: color 250ms var(--timing-function),
-    fill 250ms var(--timing-function);
-
-  color: var(--text-color);
-
-  &:hover {
-    color: var(--hover-color);
-  }
-
-  &:focus {
-    color: var(--hover-color);
-  }
-  &:focus .contacts-list__icon {
-    fill: var(--hover-color);
-  }
-}
-
-.contacts-list__icon {
-  margin-right: 10px;
-  fill: currentColor;
 }
