@@ -1,2 +1,12 @@
-@import "./_header.scss";
-@import "/sass/utils/vars";
+@import "./utils/vars";
+@import "./components/header";
+@import "./components/logo";
+@import "./components/hero";
+@import "./components/benefits";
+@import "./components/about";
+@import "./components/team";
+@import "./components/klients";
+@import "./components/footer";
+@import "./components/portfolio";
+@import "./components/backdrop";
+@import "./components/modal";

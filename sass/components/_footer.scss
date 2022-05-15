@@ -1,0 +1,153 @@
+.footer {
+  background-color: var(--background-color-hero-footer);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.web__social {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer-logo {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--hover-color);
+  text-decoration: none;
+}
+
+.footer-logo__studio {
+  color: var(--background-color-main);
+}
+
+.footer-adress {
+  margin-top: 20px;
+}
+
+.footer-adress__list {
+  font-style: normal;
+}
+
+.footer-adress__item {
+  margin-bottom: 9px;
+}
+.footer-adress__list .footer-adress__item:last-child {
+  margin-bottom: 0;
+}
+
+.footer-adress__link {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--background-color-main);
+}
+
+.footer-adress__list {
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-social-link {
+  margin-left: 70px;
+}
+
+.footer-social-title {
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--background-color-main);
+}
+
+.social-list {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+}
+.social-item {
+  margin-right: 10px;
+}
+.social-item:last-child {
+  margin-right: 0;
+}
+
+.icon-link {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.1);
+
+  transition: background-color 250ms var(--timing-function);
+}
+
+.footer-icon {
+  fill: var(--background-color-main);
+}
+
+.icon-link:hover,
+.icon-link:focus {
+  background-color: var(--hover-color);
+}
+.footer-form-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--background-color-main);
+}
+.footer-form {
+  margin-left: 93px;
+}
+
+.footer-input {
+  padding-left: 16px;
+  margin-top: 20px;
+  width: 358px;
+  height: 50px;
+  background-color: inherit;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+}
+.footer-input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+.footer-form-btn {
+  margin-left: 12px;
+  position: relative;
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 50px;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1, 87;
+  color: var(--background-color-main);
+
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: transparent;
+  cursor: pointer;
+}
+
+.footer-form-icon {
+  position: absolute;
+  fill: var(--background-color-main);
+  margin-left: 10px;
+}

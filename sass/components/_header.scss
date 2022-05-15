@@ -1,11 +1,3 @@
-.header {
-  border-bottom: 1px solid #ececec;
-}
-
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
 /* section "header" */
 
 .header__logo {
@@ -16,20 +8,8 @@
   font-size: 26px;
   text-decoration: none;
 }
-
-.logo__web {
-  color: var(--hover-color);
-}
-
-.logo__studio {
-  color: #000000;
-}
-
-.container {
-  width: 1200px;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin: 0 auto;
+.header {
+  border-bottom: 1px solid #ececec;
 }
 
 .main__nav {
@@ -38,7 +18,6 @@
 }
 
 .menu-list {
-  list-style: none;
   display: flex;
 }
 
@@ -53,7 +32,6 @@
 
   transition: color 250ms var(--timing-function);
 
-  text-decoration: none;
   color: var(--title-color);
   font-weight: 500;
   font-size: 14px;
@@ -111,7 +89,6 @@
   transition: color 250ms var(--timing-function),
     fill 250ms var(--timing-function);
 
-  text-decoration: none;
   color: var(--text-color);
 }
 
