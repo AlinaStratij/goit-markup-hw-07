@@ -29,9 +29,9 @@
   right: 8px;
   position: absolute;
   cursor: pointer;
-}
-.modal-btn:hover .modal-icon {
-  fill: var(--hover-color);
+  &:hover .modal-icon {
+    fill: var(--hover-color);
+  }
 }
 
 .is-hidden {
@@ -61,6 +61,12 @@
   box-sizing: border-box;
   border-radius: 4px;
   transition: border-color 250ms var(--timing-function);
+  &:focus {
+    border-color: var(--hover-color);
+  }
+  &:focus + .input-icon {
+    fill: var(--hover-color);
+  }
 }
 .input-icon {
   margin-left: 12px;
@@ -69,13 +75,6 @@
   top: 50%;
   transform: translateY(-50%);
   transition: fill 250ms var(--timing-function);
-}
-
-.modal-input:focus {
-  border-color: var(--hover-color);
-}
-.modal-input:focus + .input-icon {
-  fill: var(--hover-color);
 }
 
 .form-btn {
@@ -95,11 +94,10 @@
   border-radius: 4px;
   cursor: pointer;
   transition: background 250ms var(--timing-function);
-}
-
-.form-btn:hover,
-.form-btn:focus {
-  background: #188ce8;
+  &:hover,
+  &:focus {
+    background: #188ce8;
+  }
 }
 
 .modal-label {
@@ -126,9 +124,9 @@
   resize: horizontal;
   outline: none;
   transition: border-color 250ms var(--timing-function);
-}
-.modal-comment:focus {
-  border-color: var(--hover-color);
+  &:focus {
+    border-color: var(--hover-color);
+  }
 }
 
 .modal-comment::placeholder {

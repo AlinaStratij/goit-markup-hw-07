@@ -68,10 +68,9 @@
   align-items: center;
   transition: background-color 250ms var(--timing-function),
     fill 250ms var(--timing-function);
-}
-
-.social-list__link:hover,
-.social-list__link:focus {
-  background-color: var(--hover-color);
-  fill: var(--background-color-main);
+  &:hover,
+  &:focus {
+    background-color: var(--hover-color);
+    fill: var(--background-color-main);
+  }
 }

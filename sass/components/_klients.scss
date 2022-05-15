@@ -29,10 +29,9 @@
   justify-content: center;
   transition: fill 250ms var(--timing-function),
     border-color 250ms var(--timing-function);
-}
-
-.klients-list__link:hover,
-.klients-list__link:focus {
-  fill: var(--hover-color);
-  border-color: var(--hover-color);
+  &:hover,
+  &:focus {
+    fill: var(--hover-color);
+    border-color: var(--hover-color);
+  }
 }

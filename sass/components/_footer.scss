@@ -88,16 +88,16 @@
   background-color: rgba(255, 255, 255, 0.1);
 
   transition: background-color 250ms var(--timing-function);
+  &:hover,
+  &:focus {
+    background-color: var(--hover-color);
+  }
 }
 
 .footer-icon {
   fill: var(--background-color-main);
 }
 
-.icon-link:hover,
-.icon-link:focus {
-  background-color: var(--hover-color);
-}
 .footer-form-title {
   font-weight: 700;
   font-size: 14px;
