@@ -13,11 +13,11 @@
   transform: translate(-50%, -50%) scale(1);
 }
 .modal-icon {
-  display: flex;
-  align-items: center;
+  @extend %align-list;
   justify-content: center;
   transition: fill 250ms var(--timing-function);
 }
+
 .modal-btn {
   width: 30px;
   height: 30px;
