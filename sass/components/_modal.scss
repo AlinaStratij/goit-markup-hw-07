@@ -19,6 +19,10 @@
 }
 
 .modal-btn {
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 30px;
   height: 30px;
   background: #ffffff;
@@ -69,15 +73,15 @@
   }
 }
 .input-icon {
-  margin-left: 12px;
   position: absolute;
-  left: 0;
+  left: 12px;
   top: 50%;
   transform: translateY(-50%);
   transition: fill 250ms var(--timing-function);
 }
 
 .form-btn {
+  border: transparent;
   margin: 0 auto;
   display: block;
   width: 200px;
@@ -111,6 +115,7 @@
 }
 
 .modal-comment {
+  display: block;
   margin-top: 4px;
   padding: 12px 16px;
   width: 100%;
@@ -121,7 +126,7 @@
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
   border-radius: 4px;
-  resize: horizontal;
+  resize: none;
   outline: none;
   transition: border-color 250ms var(--timing-function);
   &:focus {
